@@ -1,3 +1,5 @@
+# this is the python binary search code for aggressive cows problem
+
 def isPossible(stalls,mid,k):
     cows =1
     last = stalls[0]
