@@ -1,6 +1,6 @@
 import sys
 def maxsumsubarray(l,n):
-    maxi = -sys.maxsize -1
+    maxi = float('inf')
     maxsum=0
     ansstart,ansend = -1,-1
     for i in range(n):
