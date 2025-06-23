@@ -4,6 +4,7 @@ def solve(i,j,mat,n,ans,move,vis,di,dj):
         return
 
     dir= "DLRU"
+    # dir = "DR"
     for index in range(4):
         nexti = i+di[index]
         nextj = j+dj[index]
@@ -11,12 +12,14 @@ def solve(i,j,mat,n,ans,move,vis,di,dj):
             vis[i][j]=1
             solve(nexti,nextj,mat,n,ans,move+dir[index],vis,di,dj)
             vis[i][j]=0
-
+3
 def RatinMaze(mat,n):
     ans = []
     vis = [[0 for _ in range(n)] for _ in range(n)]
     di = [1,0,0,-1]
     dj = [0,-1,1,0]
+    # di = [1,0]
+    # dj = [0,1]
     if mat[0][0]==1:
         solve(0,0,mat,n,ans,"",vis,di,dj)
         return ans
@@ -27,4 +30,4 @@ if __name__ == "__main__":
            [1, 1, 0, 0],
            [0, 1, 1, 1]]
     n = 4
-    print(RatinMaze(mat,n)) #['DDRR', 'DRDDRR']
+    print(RatinMaze(mat,n)) #['DDRDRR', 'DRDDRR']
