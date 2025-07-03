@@ -25,7 +25,6 @@ class Backtrack:
                 self.Solve(col+1,n,board,ans,leftRow,upperDiagonal,lowerDiagonal,n1)
 
                 #to remove the queen
-
                 board[row] = board[row][:col]+"."+board[row][col+1:]
                 leftRow[row]=0
                 upperDiagonal[row+col]=0

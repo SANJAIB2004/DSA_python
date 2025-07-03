@@ -275,17 +275,17 @@ s = "helloworld"
 res = [['0' for _ in range(len(s))]for _ in range(len(s))]
 print(*res)
 # Initialize a list of the same length as s
-for i in range(len(s)):
-    for j in range(len(s)):
-        if i==j:
-            res[i][j] = s[i]
-        if i+j == len(s)-1:
-            res[i][j] = s[i]
-
-for row in res:
-    for val in row:
-        print(f"{val if val != '0' else ' '}", end=" ")
-    print()
+# for i in range(len(s)):
+#     for j in range(len(s)):
+#         if i==j:
+#             res[i][j] = s[i]
+#         if i+j == len(s)-1:
+#             res[i][j] = s[i]
+#
+# for row in res:
+#     for val in row:
+#         print(f"{val if val != '0' else ' '}", end=" ")
+#     print()
 
 # output:
 # h                 h
@@ -298,6 +298,25 @@ for row in res:
 #     r         r
 #   l             l
 # d                 d
+# ----------------------------------------------------------------------------------#
+# n = 5
+#
+# for i in range(n):
+#     for j in range(n):
+#         if i==0 or j==0 or i == n-1 or j == n-1 or i == j or i+j == n-1:
+#             print('*',end=" ")
+#         else:
+#             print(' ',end=" ")
+#     print()
+
+# output:
+# * * * * *
+# * *   * *
+# *   *   *
+# * *   * *
+# * * * * *
+
+
 
 
 
