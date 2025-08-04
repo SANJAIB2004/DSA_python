@@ -5,7 +5,6 @@ def permutationSeq(n,k):
         fact*=i
         nums.append(i)
     nums.append(n)
-
     k-=1
     ans = ""
     while True:
@@ -15,11 +14,7 @@ def permutationSeq(n,k):
             break
         k%=fact
         fact//=len(nums)
-
     return ans
-
-
-
 
 n =3
 k =6
