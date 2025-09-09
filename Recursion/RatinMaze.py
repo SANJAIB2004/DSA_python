@@ -12,7 +12,7 @@ def solve(i,j,mat,n,ans,move,vis,di,dj):
             vis[i][j]=1
             solve(nexti,nextj,mat,n,ans,move+dir[index],vis,di,dj)
             vis[i][j]=0
-3
+
 def RatinMaze(mat,n):
     ans = []
     vis = [[0 for _ in range(n)] for _ in range(n)]

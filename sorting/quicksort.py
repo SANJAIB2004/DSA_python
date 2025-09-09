@@ -17,8 +17,8 @@ def partition(arr,low,high):
 #         pivotI = partition(arr,low,high)
 #         quicksort(arr,low,pivotI-1)
 #         quicksort(arr,pivotI+1,high)
-#
 #     return arr
+
 def quicksort(arr,low,high):
     while low<high:
         pivotI = partition(arr,low,high)
@@ -33,7 +33,7 @@ def quicksort(arr,low,high):
 
 if __name__ == '__main__':
     arr = list(map(int,input().split()))
-    low ,high = 0,len(arr)-1
+    low,high = 0,len(arr)-1
     res = quicksort(arr,low,high)
     print(res[:])
 

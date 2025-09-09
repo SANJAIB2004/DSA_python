@@ -17,8 +17,6 @@ def solve(index,s,path,res):
             solve(i+1,s,path,res)
             path.pop()
 
-
-
 def palindromepartition(s):
     res=[]
     path=[]

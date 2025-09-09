@@ -7,7 +7,7 @@ def validsuduko(suduko):
 
     for r in range(9):
         for c in range(9):
-            if suduko[r][c] ==0:
+            if suduko[r][c] == 0:
                 return ['']
             if suduko[r][c] in rows[r] or suduko[r][c] in cols[c] or suduko[r][c] in squares[(r//3,c//3)]:
                 return False
@@ -17,7 +17,7 @@ def validsuduko(suduko):
     return True
 
 
-suduko =[ [5, 3, 0, 0, 7, 0, 0, 0, 0],
+suduko =   [[5, 3, 0, 0, 7, 0, 0, 0, 0],
             [6, 0, 0, 1, 9, 5, 0, 0, 0],
             [0, 9, 8, 0, 0, 0, 0, 6, 0],
             [8, 0, 0, 0, 6, 0, 0, 0, 3],
