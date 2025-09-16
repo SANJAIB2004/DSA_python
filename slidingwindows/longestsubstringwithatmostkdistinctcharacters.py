@@ -1,5 +1,4 @@
 from collections import defaultdict
-
 def maxstr(s,k):
     n =len(s)
     l=r=maxlen=0

@@ -1,7 +1,7 @@
 def containerwithmax(height):
-    l =0
+    l = 0
     r = len(height)-1
-    maxArea =0
+    maxArea = 0
     while l<r:
         area = (r-l)*min(height[l],height[r])
         maxArea = max(maxArea,area)
@@ -11,7 +11,6 @@ def containerwithmax(height):
         else:
             r-=1
     return maxArea
-
 
 height = [1,8,6,2,5,4,8,3,7]
 print(containerwithmax(height))

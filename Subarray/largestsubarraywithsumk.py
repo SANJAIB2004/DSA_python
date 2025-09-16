@@ -8,7 +8,6 @@ def largestsubarraywithsumk(arr,k):
             maxlen = max(maxlen,i+1)
 
         rem = sum-k
-
         if rem in prefixsum:
             length = i - prefixsum[rem]
             maxlen = max(maxlen,length)
